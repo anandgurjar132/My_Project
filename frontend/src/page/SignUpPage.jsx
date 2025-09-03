@@ -1,7 +1,7 @@
 import React from 'react'
-//import SignUp from '../components/Auth/SignUp'
-import SignUp from '../components/Auth/signUp'
+
 import Navbar from '../components/Shared/Navbar'
+import SignUp from '../components/Auth/signUp'
 function SignUpPage() {
   return (
     <>
@@ -11,4 +11,4 @@ function SignUpPage() {
   )
 }
 
-export default SignUpPage
+export default SignUpPage ;
