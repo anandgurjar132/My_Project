@@ -30,6 +30,8 @@ app.use(cors());
 mongoose.set('strictQuery', true);
 //mongoose.connect(process.env.MONGOCONNECTION, { useNewUrlParser: true });
 mongoose.connect(`${process.env.mongoDB}`, { useNewUrlParser: true })
+.then(()=>{console.log("done")})
+.catch((err)=>{console.log(err)})
 
 
 app.get('/try', (req, res) => {
@@ -49,7 +51,7 @@ app.use(errorHandlerMiddleware)  ;
 
 
 
-let port =  5004  ;
+let port = process.env.PORT   ;
  app.listen(port, () => {
    console.log(`Server running on port: http://localhost:${port}`);
   });
