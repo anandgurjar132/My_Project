@@ -29,7 +29,7 @@ app.use(cors());
 
 mongoose.set('strictQuery', true);
 //mongoose.connect(process.env.MONGOCONNECTION, { useNewUrlParser: true });
-mongoose.connect('mongodb://localhost:27017/My_Project', { useNewUrlParser: true })
+mongoose.connect(process.env.mongoDB, { useNewUrlParser: true })
 
 
 app.get('/try', (req, res) => {
