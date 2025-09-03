@@ -1,7 +1,7 @@
 import React from 'react'
 
 import Navbar from '../components/Shared/Navbar'
-import SignUp from '../components/Auth/signUp'
+import SignUp from '../components/Auth/signUp';   
 function SignUpPage() {
   return (
     <>
