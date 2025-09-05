@@ -92,7 +92,7 @@ function Appointment() {
           whileInView={{ opacity: 1 }}
           
           className=" shadow-xl bg-[#FAEDCD] shadow-black lg:w-[50%] w-full overflow-auto">
-            <form className="flex flex-col w-full h-full  gap-4 p-5 justify-center lg:ps-14 items-center">
+            <form className="flex flex-col w-full h-full  gap-4 p-5 justify-center lg:ps-14 items-center" style={{width:"70%"}}>
               <p className="text-2xl font-semibold">Book Appointment</p>
               <div className="w-full flex m-2 justify-center items-center ">
                 <div className="w-full flex flex-col">
