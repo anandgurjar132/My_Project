@@ -73,8 +73,8 @@ function Appointment() {
 
     className="bg-[#FEFAE0]">
       <Navbar />
-      <div className="h-screen f-screen  flex justify-center items-center">
-        <div className=" h-[80%] w-full mt-[80px] flex justify-center items-center gap-5 rounded-xl">
+      <div className="h-screen f-screen  flex justify-center items-center" style={{width:"80%"}}>
+        <div className=" h-[80%] w-full mt-[80px] flex justify-center items-center gap-5 rounded-xl" style={{width:"80%"}}>
           <motion.div
           ref={ref}
           initial={{ opacity: 0, x: -50 }} 
