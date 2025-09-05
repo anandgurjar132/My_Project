@@ -92,7 +92,9 @@ function Appointment() {
           whileInView={{ opacity: 1 }}
           
           className=" shadow-xl bg-[#FAEDCD] shadow-black lg:w-[50%] w-full overflow-auto">
-            <form className="flex flex-col w-full h-full  gap-4 p-5 justify-center lg:ps-14 items-center" style={{width:"70%"}}>
+            <form className="flex flex-col w-full h-full  gap-4 p-5 justify-center lg:ps-14 items-center" 
+            style={{ width: '70%', padding: '2rem' }}
+            >
               <p className="text-2xl font-semibold">Book Appointment</p>
               <div className="w-full flex m-2 justify-center items-center ">
                 <div className="w-full flex flex-col">
@@ -127,7 +129,7 @@ function Appointment() {
                 <div className="w-[90%] flex flex-col">
                   Time Of Appointment:
                   <input
-                    className=" h-10 w-[300px] rounded-md border border-black/30 bg-transparent px-3 py-2 text-sm placeholder:text-gray-600 focus:outline-none focus:ring-1 focus:ring-black/30 focus:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-50"
+                    className=" h-10 w-full rounded-md border border-black/30 bg-transparent px-3 py-2 text-sm placeholder:text-gray-600 focus:outline-none focus:ring-1 focus:ring-black/30 focus:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-50"
                     type="time"
                     placeholder="Time"
                     onChange={(e) => setAppointment({ ...appointment, time: e.target.value })}
@@ -139,7 +141,7 @@ function Appointment() {
                   Choose Doctor Name:
                   <select
                     id="doctors"
-                    className="h-10 w-[300px] rounded-md border border-black/30 bg-transparent px-3 py-2 text-sm placeholder:text-gray-600 focus:outline-none focus:ring-1 focus:ring-black/30 focus:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-50"
+                    className="h-10 w-full rounded-md border border-black/30 bg-transparent px-3 py-2 text-sm placeholder:text-gray-600 focus:outline-none focus:ring-1 focus:ring-black/30 focus:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-50"
                     onChange={(e) => setAppointment({ ...appointment, doctor: e.target.value })}
                   >
                     <option value="Choose you Consultant">
@@ -155,7 +157,7 @@ function Appointment() {
                 <div className="w-full flex flex-col">
                   Enter Reason:
                   <textarea
-                    className="h-10 w-[300px] rounded-md border border-black/30 bg-transparent px-3 py-2 text-sm placeholder:text-gray-600 focus:outline-none focus:ring-1 focus:ring-black/30 focus:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-50"
+                    className="h-10 w-full rounded-md border border-black/30 bg-transparent px-3 py-2 text-sm placeholder:text-gray-600 focus:outline-none focus:ring-1 focus:ring-black/30 focus:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-50"
                     rows="10"
                     placeholder="Reason"
                     onChange={(e) => setAppointment({ ...appointment, reason: e.target.value })}
