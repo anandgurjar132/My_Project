@@ -57,6 +57,7 @@ function SignUp() {
 
   return (
     <motion.section className='bg-[#FEFAE0]'
+    style={{width:"80%"}}
     >
         <motion.div
         ref={ref}
@@ -64,7 +65,10 @@ function SignUp() {
         animate={{ opacity: inView ? 1 : 0, x: inView ? 0 : -50 }} 
         transition={{ duration: 1.5 }}
         whileInView={{ opacity: 1 }}
-         className="flex items-center  justify-center px-8 py-24">
+         className="flex items-center  justify-center px-8 py-24"
+    style={{width:"90%"}}
+         
+         >
             <div className="xl:mx-auto xl:w-full xl:max-w-sm 2xl:max-w-md bg-[#CCD5AE] shadow-xl shadow-black p-5 rounded-lg mt-6">
             
             <h2 className="text-center text-2xl font-bold leading-tight text-black">

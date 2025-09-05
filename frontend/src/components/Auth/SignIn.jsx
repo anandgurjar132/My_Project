@@ -96,14 +96,18 @@ function SignIn() {
     <motion.section
     
     
-        className="bg-[#FEFAE0] h-screen w-screen">
+        className="bg-[#FEFAE0] h-screen w-screen"
+    style={{width:"80%"}}
+        >
       <motion.div
       ref={ref}
       initial={{ opacity: 0, y: 50 }} 
       animate={{ opacity: inView ? 1 : 0, y: inView ? 0 : 50 }} 
       transition={{ duration: 1.5 }}
       whileInView={{ opacity: 1 }}
-       className="flex items-center justify-center h-full max-w-7xl m-auto md:w-[60%] rounded-xl lg:w-[40%]  ">
+       className="flex items-center justify-center h-full max-w-7xl m-auto md:w-[60%] rounded-xl lg:w-[40%]  "
+    style={{width:"90%"}}
+       >
         <div className="xl:mx-auto xl:w-full xl:max-w-sm 2xl:max-w-md bg-[#CCD5AE] shadow-xl shadow-black p-4 rounded-lg">
           <h2 className="text-center text-2xl font-bold leading-tight text-black">
             Sign in to your account
