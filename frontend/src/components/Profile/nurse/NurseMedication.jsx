@@ -27,7 +27,7 @@ function NurseMedication() {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await axios.get("http://localhost:5004/user/get-users");
+        const response = await axios.get("https://anand-goyal.onrender.com/user/get-users");
         setPatients(response.data);
         
       } catch (error) {
@@ -42,7 +42,7 @@ function NurseMedication() {
 
   const handleAddMedication = async(e) =>{
     e.preventDefault() ;
-    await axios.post(`http://localhost:5004/user/add-medications/${changePatient}`,{name ,  frequency , dosage})
+    await axios.post(`https://anand-goyal.onrender.com/user/add-medications/${changePatient}`,{name ,  frequency , dosage})
     .then((res) =>{
       Swal.fire({
         title: "Success",

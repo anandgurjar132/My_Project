@@ -37,7 +37,7 @@ function UserBookAppointment() {
       setEmail(user.email);
     };
     const fetchDoctors = async (e) => {
-      const res = await axios.get("http://localhost:5004/doctor/get-doctors");
+      const res = await axios.get("https://anand-goyal.onrender.com/doctor/get-doctors");
       setDoctors(res.data);
     };
 
@@ -49,7 +49,7 @@ function UserBookAppointment() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     await axios
-      .post('http://localhost:5004/appointment/add-appointment', {
+      .post('https://anand-goyal.onrender.com/appointment/add-appointment', {
         patient: userData.userName,
         phone: mobileNumber,
         doctor: doctor,

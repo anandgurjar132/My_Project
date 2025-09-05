@@ -28,7 +28,7 @@ function Appointment() {
 
   useEffect(() => {
     const fetchDoctors = async (e) => {
-      const res = await axios.get("http://localhost:5004/doctor/get-doctors");
+      const res = await axios.get("https://anand-goyal.onrender.com/doctor/get-doctors");
       setDoctors(res.data);
     };
 
@@ -39,7 +39,7 @@ function Appointment() {
     e.preventDefault();
 
     await axios
-      .post(`http://localhost:5004/appointment/add-appointment`, {
+      .post(`https://anand-goyal.onrender.com/appointment/add-appointment`, {
         patient: appointment.patient,
         phone: appointment.phone,
         doctor: appointment.doctor,

@@ -38,7 +38,7 @@ function DoctorProfile() {
     e.preventDefault();
     try {
       axios
-        .put("http://localhost:5004/doctor/profile-update", {
+        .put("https://anand-goyal.onrender.com/doctor/profile-update", {
           userId: userData._id,
           updatedProfile: {
             email: email,

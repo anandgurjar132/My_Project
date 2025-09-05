@@ -15,7 +15,7 @@ function AdminDashboard() {
   useEffect(() => {
     const fetchInfo = async (e) => {
       await axios
-        .get(`http://localhost:5004/admin/get-count`, {
+        .get(`https://anand-goyal.onrender.com/admin/get-count`, {
         })
         .then((res) => {
           setdocount(res.data.doccou);

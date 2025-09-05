@@ -13,7 +13,7 @@ function SignUp() {
 
      async function fetchdata(){
      try {
-  const res = await fetch("http://localhost:5004/try", { method: "GET" });
+  const res = await fetch("https://anand-goyal.onrender.com/try", { method: "GET" });
   const data = await res.json();
   console.log("Data fetched:", data);
 } catch (err) {
@@ -38,7 +38,7 @@ function SignUp() {
         e.preventDefault();
         console.log(data)
         console.log("registration prosese")
-        await axios.post("http://localhost:5004/auth/register", data)
+        await axios.post("https://anand-goyal.onrender.com/auth/register", data)
           .then((res) => {
             if (res.data.message === "Success") {
               navigate("/sign-in");

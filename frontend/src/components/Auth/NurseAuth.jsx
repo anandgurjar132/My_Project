@@ -38,7 +38,7 @@ function NurseAuth() {
     e.preventDefault();
     dispatch(loginProgress());
     axios
-      .post("http://localhost:5004/auth/login", data)
+      .post("https://anand-goyal.onrender.com/auth/login", data)
       .then((res) => {
         if (res.data.role === "nurse") {
           const user = res.data.user;

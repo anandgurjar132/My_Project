@@ -12,7 +12,7 @@ function AdminPatient() {
     const fetchData = async () => {
       try {
         const response = await axios.get(
-          "http://localhost:5004/admin/get-users"
+          "https://anand-goyal.onrender.com/admin/get-users"
         );
         setUsers(response.data);
       } catch (error) {

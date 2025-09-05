@@ -23,7 +23,7 @@ function NurseBed() {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        await axios.get(`http://localhost:5004/doctor/get-message/${currentUser.email}`)
+        await axios.get(`https://anand-goyal.onrender.com/doctor/get-message/${currentUser.email}`)
         .then((res) =>{
           setMessage(res.data);
 

@@ -18,7 +18,7 @@ function AdminNurse() {
     const fetchData = async () => {
       try {
         const response = await axios.get(
-          "http://localhost:5004/admin/get-department"
+          "https://anand-goyal.onrender.com/admin/get-department"
         );
         setDepartments(response.data);
       } catch (error) {
@@ -36,7 +36,7 @@ function AdminNurse() {
   useEffect(() => {
     const getNurses = async () => {
       const data = await axios
-        .get("http://localhost:5004/nurse/get-nurses")
+        .get("https://anand-goyal.onrender.com/nurse/get-nurses")
         .then((response) => {
           setNurses(response.data);
         })
@@ -55,7 +55,7 @@ function AdminNurse() {
   const handleAddNurse = async (e) => {
     e.preventDefault();
      await axios
-      .post("http://localhost:5004/nurse/add-nurse", {
+      .post("https://anand-goyal.onrender.com/nurse/add-nurse", {
         name: nurname,
         email: nuremail,
         department: nurdept,

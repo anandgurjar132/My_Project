@@ -17,7 +17,7 @@ const AdminSidebar = ({ profilePic, userName }) => {
   const dispatch = useDispatch();
   const handleSignOut = async (e) => {
     e.preventDefault();
-    await axios.get("http://localhost:5004/auth/logout").then((res) => {
+    await axios.get("https://anand-goyal.onrender.com/auth/logout").then((res) => {
       if (res.data.message === "User Logged Out") {
         localStorage.removeItem("user");
         dispatch(logout());

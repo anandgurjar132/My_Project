@@ -15,7 +15,7 @@ function DoctorAppointmen() {
     const fetchData = async () => {
       try {
         const response = await axios.get(
-          `http://localhost:5004/appointment/get-appointment/${currentUser._id}`
+          `https://anand-goyal.onrender.com/appointment/get-appointment/${currentUser._id}`
         );
         setAppointments(response.data);
       } catch (error) {

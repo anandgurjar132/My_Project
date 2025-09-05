@@ -33,7 +33,7 @@ function Home() {
         e.preventDefault(); 
         await axios
        // .post("https://hmsmern.onrender.com/admin/new-letter", {email})
-         .post("http://localhost:5004/admin/new-letter", {email})
+         .post("https://anand-goyal.onrender.com/admin/new-letter", {email})
         .then(() =>{
             Swal.fire({
                 title: "Success",
