@@ -29,10 +29,11 @@ function AboutUs() {
 
   return (
     <>
-    <Navbar/>
+   
     <section  
     
     className='pt-[80px] bg-[#FEFAE0]'>    
+     <Navbar/>
       <motion.div
       ref={ref}
       initial={{ opacity: 0 }} 
