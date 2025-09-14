@@ -98,7 +98,7 @@ function Appointment() {
                 <div className="w-full flex flex-col">
                   Name:
                   <input
-                    className=" h-10 w-[300px] rounded-md border border-black/30 bg-transparent px-3 py-2 text-sm placeholder:text-gray-600 focus:outline-none focus:ring-1 focus:ring-black/30 focus:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-50"
+                    className=" h-10 w-full rounded-md border border-black/30 bg-transparent px-3 py-2 text-sm placeholder:text-gray-600 focus:outline-none focus:ring-1 focus:ring-black/30 focus:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-50"
                     type="text"
                     placeholder="Name"
                     onChange={(e) => setAppointment({ ...appointment, patient: e.target.value })}
@@ -107,7 +107,7 @@ function Appointment() {
                 <div className="w-full flex flex-col">
                   Phone Number:
                   <input
-                    className=" h-10 w-[300px] rounded-md border border-black/30 bg-transparent px-3 py-2 text-sm placeholder:text-gray-600 focus:outline-none focus:ring-1 focus:ring-black/30 focus:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-50"
+                    className=" h-10 w-full rounded-md border border-black/30 bg-transparent px-3 py-2 text-sm placeholder:text-gray-600 focus:outline-none focus:ring-1 focus:ring-black/30 focus:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-50"
                     type="number"
                     placeholder="Phone/Mobile"
                     onChange={(e) => setAppointment({ ...appointment, phone: e.target.value })}
@@ -118,7 +118,7 @@ function Appointment() {
                 <div className="w-[90%] flex flex-col">
                   Date Of Appointment:
                   <input
-                    className=" h-10 w-[300px] rounded-md border border-black/30 bg-transparent px-3 py-2 text-sm placeholder:text-gray-600 focus:outline-none focus:ring-1 focus:ring-black/30 focus:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-50"
+                    className=" h-10 w-full rounded-md border border-black/30 bg-transparent px-3 py-2 text-sm placeholder:text-gray-600 focus:outline-none focus:ring-1 focus:ring-black/30 focus:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-50"
                     type="date"
                     placeholder="Date"
                     onChange={(e) => setAppointment({ ...appointment, appointmentDate: e.target.value })}
@@ -127,7 +127,7 @@ function Appointment() {
                 <div className="w-[90%] flex flex-col">
                   Time Of Appointment:
                   <input
-                    className=" h-10 w-[300px] rounded-md border border-black/30 bg-transparent px-3 py-2 text-sm placeholder:text-gray-600 focus:outline-none focus:ring-1 focus:ring-black/30 focus:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-50"
+                    className=" h-10 w-full rounded-md border border-black/30 bg-transparent px-3 py-2 text-sm placeholder:text-gray-600 focus:outline-none focus:ring-1 focus:ring-black/30 focus:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-50"
                     type="time"
                     placeholder="Time"
                     onChange={(e) => setAppointment({ ...appointment, time: e.target.value })}
@@ -139,7 +139,7 @@ function Appointment() {
                   Choose Doctor Name:
                   <select
                     id="doctors"
-                    className="h-10 w-[300px] rounded-md border border-black/30 bg-transparent px-3 py-2 text-sm placeholder:text-gray-600 focus:outline-none focus:ring-1 focus:ring-black/30 focus:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-50"
+                    className="h-10 w-full rounded-md border border-black/30 bg-transparent px-3 py-2 text-sm placeholder:text-gray-600 focus:outline-none focus:ring-1 focus:ring-black/30 focus:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-50"
                     onChange={(e) => setAppointment({ ...appointment, doctor: e.target.value })}
                   >
                     <option value="Choose you Consultant">
@@ -155,7 +155,7 @@ function Appointment() {
                 <div className="w-full flex flex-col">
                   Enter Reason:
                   <textarea
-                    className="h-10 w-[300px] rounded-md border border-black/30 bg-transparent px-3 py-2 text-sm placeholder:text-gray-600 focus:outline-none focus:ring-1 focus:ring-black/30 focus:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-50"
+                    className="h-10 w-full rounded-md border border-black/30 bg-transparent px-3 py-2 text-sm placeholder:text-gray-600 focus:outline-none focus:ring-1 focus:ring-black/30 focus:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-50"
                     rows="10"
                     placeholder="Reason"
                     onChange={(e) => setAppointment({ ...appointment, reason: e.target.value })}
@@ -166,7 +166,7 @@ function Appointment() {
                 <div className="w-full flex flex-col">
                   Email:
                   <input
-                    className=" h-10 w-[300px] rounded-md border border-black/30 bg-transparent px-3 py-2 text-sm placeholder:text-gray-600 focus:outline-none focus:ring-1 focus:ring-black/30 focus:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-50"
+                    className=" h-10 w-full rounded-md border border-black/30 bg-transparent px-3 py-2 text-sm placeholder:text-gray-600 focus:outline-none focus:ring-1 focus:ring-black/30 focus:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-50"
                     type="email"
                     placeholder="Enter Email"
                     onChange={(e) => setAppointment({ ...appointment, email: e.target.value })}
@@ -175,7 +175,7 @@ function Appointment() {
                 <div className="w-full flex flex-col">
                   City: 
                   <input
-                    className=" h-10 w-[300px] rounded-md border border-black/30 bg-transparent px-3 py-2 text-sm placeholder:text-gray-600 focus:outline-none focus:ring-1 focus:ring-black/30 focus:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-50"
+                    className=" h-10 w-full rounded-md border border-black/30 bg-transparent px-3 py-2 text-sm placeholder:text-gray-600 focus:outline-none focus:ring-1 focus:ring-black/30 focus:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-50"
                     type="email"
                     placeholder="Enter Email"
                     onChange={(e) => setAppointment({ ...appointment, city: e.target.value })}
